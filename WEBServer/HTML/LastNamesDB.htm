@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var oReq = getAjax();
+
+        oReq.onreadystatechange = onReadyStateChandeHandler;
+
+        function getAjax() {
+            if (window.XMLHttpRequest) {
+                return new XMLHttpRequest();
+            }
+            else {
+                return new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+
+        function onReadyStateChandeHandler() {
+            if (oReq.readyState == 4 && oReq.status == 200) {
+                document.getElementById("divTable").innerHTML = oReq.responseText;
+            }
+        }
+
+        function showAllButton_onclick() {
+            oReq.open("DB", "/all", true);
+            oReq.send();
+        }
+        function filterText_onchange(value) {
+            if (value != "") {
+                var sUrl = "/" + value;
+                oReq.open("DB", sUrl, true);
+                oReq.send();
+            }
+            else {
+                document.getElementById("divTable").innerHTML = "";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        Filter<br />
+        <input type="text" id="filterText" onkeyup="filterText_onchange(this.value)" /><br />
+        <input type="button" id="showAllButton" value="Show All" onclick="showAllButton_onclick()" />
+        <div id="divTable">
+        </div>
+    </center>
+</body>
+</html>

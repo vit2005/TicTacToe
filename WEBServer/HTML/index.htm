@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web client</title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+        }
+        .button
+        {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        var req = getXmlHttp();
+        var name = document.getElementById("Name").value;
+        //var timer = window.setInterval("ServerRequest();", 1000);
+
+        function getXmlHttp() {
+            var xmlhttp;
+            try {
+                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (E) {
+                    xmlhttp = false;
+                }
+            }
+            if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+                xmlhttp = new XMLHttpRequest();
+            }
+            return xmlhttp;
+        }
+
+        function ConnectButton_onclick() {
+            var ip = document.getElementById("ServerIP").value;
+            var port = document.getElementById("ServerPort").value;
+            name = document.getElementById("Name").value;
+            var connectString = "name:" + name + ";Operation:Connect;ip:" + ip + ";" + "port:" + port;
+            req.onreadystatechange = function () {
+                if (req.readyState == 4) {
+                    alert("Ответ сервера: " + req.responseText);
+                }
+            }
+
+            req.open("TTT", '/' + connectString, true);
+            req.send(null);
+        }
+        function Button_onclick(element) {
+            req.onreadystatechange = function () {
+                if (req.readyState == 4) {
+                    var statusElem = document.getElementById('vote_status')
+                    statusElem.innerHTML = req.statusText
+                    if (req.status == 200) {
+                        alert("Ответ сервера: " + req.responseText);
+                    }
+                }
+            }
+            req.open("TTT", "/name:" + name + ";Operation:Move;position:" + element.id[6], true);
+            req.send(null);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    Server IP address:
+                </td>
+                <td>
+                    <input id="ServerIP" type="text" value="127.0.0.1" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Server port number:
+                </td>
+                <td>
+                    <input id="ServerPort" type="text" value="10060" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input id="Name" type="text" value="name" /><br />
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input id="ConnectButton" type="button" value="Connect" onclick="return ConnectButton_onclick()" />
+                </td>
+            </tr>
+        </table>
+        <div id="vote_status">
+            status</div>
+        <table>
+            <tr>
+                <td>
+                    <input id="Button0" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button3" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button6" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Button1" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button4" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button7" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Button2" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button5" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+                <td>
+                    <input id="Button8" type="button" class="button" onclick="return Button_onclick(this)" />
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

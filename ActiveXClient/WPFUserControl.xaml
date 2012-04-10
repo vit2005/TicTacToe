@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="ActiveXClient.WPFUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="474">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Margin="12,12,0,0" Name="ConfigGrid" VerticalAlignment="Top" Width="150">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="75" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Name:" Name="NameLabel" />
+            <Label Grid.Column="0" Grid.Row="1" Content="Server IP:" Name="IPLabel" />
+            <Label Grid.Column="0" Grid.Row="2" Content="Server port:" Name="PortLabel" />
+            <TextBox Grid.Column="1" Grid.Row="0" Name="NameTextBox" Text="name"/>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="ServerIPTextBox" Text="192.168.1.104" />
+            <TextBox Grid.Column="1" Grid.Row="2" Name="ServerPortTextBox" Text="10060" />
+            <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"  Name="ConnectButton" Content="Connect" Command="{Binding Connect}" Click="ConnectButton_Click" />
+        </Grid>
+        <ListBox HorizontalAlignment="Left" Margin="12,118,0,12" Name="PlayersListBox" Width="150" MouseDoubleClick="PlayersListBox_MouseDoubleClick" />
+        <Grid Margin="168,13,12,12" Name="BattleGrid" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Name="GameButton0" IsEnabled="False" Click="GameButtonClick"/>
+            <Button Grid.Column="0" Grid.Row="1" Name="GameButton1" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="0" Grid.Row="2" Name="GameButton2" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="1" Grid.Row="0" Name="GameButton3" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="1" Grid.Row="1" Name="GameButton4" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="1" Grid.Row="2" Name="GameButton5" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="2" Grid.Row="0" Name="GameButton6" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="2" Grid.Row="1" Name="GameButton7" IsEnabled="False" Click="GameButtonClick" />
+            <Button Grid.Column="2" Grid.Row="2" Name="GameButton8" IsEnabled="False" Click="GameButtonClick" />
+        </Grid>
+    </Grid>
+</UserControl>

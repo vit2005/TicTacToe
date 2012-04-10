@@ -1,0 +1,16 @@
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\ApplicationIcon.png
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\Background.png
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\WindowsPhoneClient.dll
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\WindowsPhoneClient.pdb
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\AppManifest.xaml
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\WindowsPhoneClient.xap
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\App.g.i.cs
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\MainPage.g.i.cs
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\WindowsPhoneClient.g.resources
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\WindowsPhoneClient.dll
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\WindowsPhoneClient.pdb
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\obj\Debug\XapCacheFile.xml
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\Newtonsoft.Json.dll
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\Newtonsoft.Json.pdb
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\WindowsPhoneClient\Bin\Debug\Newtonsoft.Json.xml
