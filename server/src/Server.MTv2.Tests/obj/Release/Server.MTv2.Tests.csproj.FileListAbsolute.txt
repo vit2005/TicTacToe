@@ -1,0 +1,5 @@
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\server\bin\Server.MTv2.Tests.dll
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\server\bin\Server.MTv2.Tests.pdb
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\server\src\Server.MTv2.Tests\obj\Release\ResolveAssemblyReference.cache
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\server\src\Server.MTv2.Tests\obj\Release\Server.MTv2.Tests.dll
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\server\src\Server.MTv2.Tests\obj\Release\Server.MTv2.Tests.pdb

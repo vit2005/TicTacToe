@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B3F0AA3-75B5-44DA-9E86-112B057C8EF4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Server.MTv2</RootNamespace>
+    <AssemblyName>Server.MTv2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientConnection\Client.cs" />
+    <Compile Include="ClientConnection\ClientEventRiser.cs" />
+    <Compile Include="ClientConnection\ClientThread.cs" />
+    <Compile Include="ClientConnection\ClientManager.cs" />
+    <Compile Include="Gaming\GameRullers\DraftsRuller.cs" />
+    <Compile Include="Gaming\GameRullers\IGameRuller.cs" />
+    <Compile Include="Gaming\GameRullers\RullerFactory.cs" />
+    <Compile Include="Gaming\GameRullers\SeaBattleRuller.cs" />
+    <Compile Include="Messaging\Command.cs" />
+    <Compile Include="Gaming\Game.cs" />
+    <Compile Include="Gaming\GameEventRiser.cs" />
+    <Compile Include="Gaming\GameManager.cs" />
+    <Compile Include="Gaming\GameRullers\TicTacToeRuller.cs" />
+    <Compile Include="LoginEventRiser.cs" />
+    <Compile Include="EventArgs\ClientListEventArgs.cs" />
+    <Compile Include="EventArgs\GameOverEventArgs.cs" />
+    <Compile Include="EventArgs\GameEventArgs.cs" />
+    <Compile Include="Messaging\JsonParser.cs" />
+    <Compile Include="Listener.cs" />
+    <Compile Include="ObserverNotifier\Notifier.cs" />
+    <Compile Include="Messaging\Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Messaging\Protocol.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Messaging\SocketMessageTransmitter.cs" />
+    <Compile Include="EventArgs\TcpClientEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

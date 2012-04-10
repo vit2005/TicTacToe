@@ -1,0 +1,14 @@
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\bin\DesktopClient.exe
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\bin\DesktopClient.pdb
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\MainWindow.g.cs
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\App.g.cs
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient_MarkupCompile.cache
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient_MarkupCompile.lref
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\MainWindow.baml
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient.g.resources
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient.Properties.Resources.resources
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient.exe
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\aclient\src\obj\x86\Release\DesktopClient.pdb

@@ -1,0 +1,5 @@
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\wclient\bin\WEBServer.exe
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\wclient\bin\WEBServer.pdb
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\wclient\src\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\wclient\src\obj\x86\Release\WEBServer.exe
+D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\wclient\src\obj\x86\Release\WEBServer.pdb

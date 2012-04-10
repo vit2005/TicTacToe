@@ -1,0 +1,9 @@
+﻿<xapCache source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\..\bin\WindowsPhoneClient.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="10.04.2012 18:26:42">
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\..\bin\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10.04.2012 18:26:42" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\Background.png" archivePath="Background.png" lastWriteTime="11.03.2012 22:29:19" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="11.03.2012 22:29:19" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\obj\Release\WindowsPhoneClient.dll" archivePath="WindowsPhoneClient.dll" lastWriteTime="10.04.2012 18:26:41" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\lib\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="20.03.2012 20:11:12" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\src\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="11.03.2012 22:29:19" />
+  <file source="D:\Dropbox\Education\Visual Studio 2010\Projects\TicTacToe\mclient\bin\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="10.04.2012 18:26:42" />
+</xapCache>
